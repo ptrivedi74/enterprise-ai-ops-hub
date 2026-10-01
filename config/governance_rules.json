@@ -1,0 +1,17 @@
+{
+  "governance_version": "1.0.0",
+  "data_privacy": {
+    "auto_redact_pii": true,
+    "allowed_pii_types": ["EMAIL", "PHONE_NUMBER"],
+    "enforce_zero_data_retention": true
+  },
+  "allowed_models": {
+    "tier_1_approved": ["gpt-4o", "claude-3-5-sonnet"],
+    "tier_2_sandbox": ["llama-3.1-70b-instruct"],
+    "prohibited_models": ["unvetted-public-endpoints"]
+  },
+  "agent_guardrails": {
+    "require_human_approval_for_high_risk": true,
+    "max_token_limit_per_request": 4000
+  }
+}
